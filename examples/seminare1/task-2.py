@@ -18,20 +18,34 @@
 
 # print(max)
 
-number1 = int(input('Введите 1 число: '))
-number2 = int(input('Введите 2 число: '))
-number3 = int(input('Введите 3 число: '))
-number4 = int(input('Введите 4 число: '))
-number5 = int(input('Введите 5 число: '))
+# Второй способ решения
 
-list = [number1, number2, number3, number4, number5]
-max = number1
-for i in list:
-    if i > max:
-        max = i
+# number1 = int(input('Введите 1 число: '))
+# number2 = int(input('Введите 2 число: '))
+# number3 = int(input('Введите 3 число: '))
+# number4 = int(input('Введите 4 число: '))
+# number5 = int(input('Введите 5 число: '))
 
-print(max)
+# my_list = [number1, number2, number3, number4, number5]
+# max = number1
+# for i in my_list:
+#     if i > max:
+#         max = i
 
+# print(max)
+
+# третий способ решения
+my_list =[]
+for i in range(5):
+    my_list.append(int(input('Введите {i+1} число: ')))
+
+maxX = my_list[0]
+for item in my_list:
+    if item > maxX:
+      maxX = item
+print(maxX)  
+
+ 
 
 
 
